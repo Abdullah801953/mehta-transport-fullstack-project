@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - MITCO-Mehta Transport Corporation</title>
     <!-- custome css -->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- bootstrap -->
 
     <!-- fonts -->
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../assets/css-var/var.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="../assets/swiper-css/swiper.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.css" />
     <!-- media query -->
     <link rel="stylesheet" href="../assets/media-query/meddia-query.css" />
   </head>
@@ -104,8 +104,8 @@
               </g>
             </svg>
           </div>
-           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" />
-            <div class="offcanvas-body"></a>
+           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" /></a>
+            <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">Home</a>
@@ -730,64 +730,67 @@
 
     <main>
       <!-- contact banner start-->
-      <section class="banner-section position-relative">
-        <div class="contact-banner">
-          <div class="over-lay"></div>
-          <div
-            class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
-          >
-            <div class="logo w-100">
-              <a href="../pages/home.html">
-                <img
-                  src="../assets/img/logo2.png"
-                  alt="logo"
-                  width="594"
-                  class="w-md-25"
-                />
-              </a>
-            </div>
-            <div class="menu-btn">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"
-                  >MENU
-                  <svg
-                    fill="#000000"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
+      <section class="banner-section position-relative container-fluid p-0">
+        <div class="row g-0">
+          <!-- Video Section -->
+          <div class="video col-12 position-relative">
+            <img src="../assets/img/about-bg.jpg" alt="" class="img-fluid w-100" />
+            <div class="over-lay"></div>
+            <!-- Header Section -->
+            <div
+              class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
+            >
+              <div class="logo w-100">
+                <a href="../pages/home.html">
+                  <img
+                    src="../assets/img/logo2.png"
+                    alt="logo"
+                    width="594"
+                    class="img-fluid w-md-25"
+                  />
+                </a>
+              </div>
+              <div class="menu-btn">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon">
+                    MENU
+                    <svg
+                      fill="#000000"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"
                       ></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Banner Info -->
+            <div class="banner-info position-absolute bottom-50 w-100">
+              <div class="banner-h1 text-center">
+                <h1>Contact Us</h1>
+              </div>
             </div>
           </div>
-          <div class="banner-info position-absolute bottom-50 w-100">
-            <div class="banner-h1 text-center"><h1>Contact Us</h1></div>
+      
+          <!-- Button Section -->
+          <div
+            class="banner-btn col-12 position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
+          >
+            <button class="rounded-2">View Our Services</button>
           </div>
-        </div>
-        <div
-          class="banner-btn position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
-        >
-          <button class="rounded-2">View Our Services</button>
         </div>
       </section>
       <!-- contact banner end-->
@@ -796,31 +799,59 @@
       <section class="contact-section py-5 container-fluid">
         <div class="contact contact-info row justify-content-center">
           <div class="col-md-6 col-xl-4 contact-info">
-            <div class="contact-h5"><h5>GET A QUOTE</h5></div>
-            <div class="contact-h2"><h2>Request A Free Quote</h2></div>
+            <div class="contact-h5"><h5 class="fs-2 mb-4">Registered Office</h5></div>
+            <div class="contact-h2"><h5 class="fw-semibold">Mehta Transport Corporation of India</h5></div>
             <div class="mb-5 contact-para">
-              <p>
-                “Reliable Transport, Your Journey’s Partner: We deliver more
-                than goods; we deliver trust, efficiency, and peace of mind.
-                With us, your cargo is in safe hands, and your deadlines are our
-                commitment. Join us on the road to success, where every mile is
-                a smile.”
-              </p>
+              <span class="fs-6">
+                CG-192, Sanjay Gandhi Transport Nagar,
+                New Delhi, Delhi – 110042
+              </span>
             </div>
-            <div class="contact-data d-flex justify-content-between">
-              <div>
-                <span>255</span>
-                <h6>Skilled Experts</h6>
-              </div>
-              <div>
-                <span>1050</span>
-                <h6>Happy Clients</h6>
-              </div>
-              <div>
-                <span>2500</span>
-                <h6>Complete Projects</h6>
-              </div>
+            <div class="contact-h2"><h5 class="fw-semibold">Mehta interstate transport corporation</h5></div>
+            <div class="mb-5 contact-para">
+              <span class="fs-6">
+                617, 6th Floor, Best Business Park, Netaji Subhash Place, Pitampura, New Delhi - 110034
+              </span>
             </div>
+            <div class="contact-h2"><h5 class="fw-semibold">Phone</h5></div>
+            <div class="mb-5 contact-para">
+              <span class="fs-6">
+                +91 9718641641, +91 9910737868
+              </span>
+            </div>
+            <div class="contact-h2"><h5 class="fw-semibold">Customer care</h5></div>
+            <div class="mb-5 contact-para">
+              <span class="fs-6">
+                +91 9312068596, +91 9312068596
+              </span>
+            </div>
+            <div class="contact-h2"><h5 class="fw-semibold">Email</h5></div>
+            <div class="mb-5 contact-para">
+              <span class="fs-6">
+                info@mtcoi.in
+              </span>
+            </div>
+            <div class="contact-h2"><h5 class="fw-semibold">Follow Us </h5></div>
+            <div class="social-icons">
+           
+<svg fill="#000000" width="40px" height="40px" viewBox="-729.6 -729.6 3379.20 3379.20" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-729.6" y="-729.6" width="3379.20" height="3379.20" rx="1689.6" fill="#ffc03d" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1168.737 487.897c44.672-41.401 113.824-36.889 118.9-36.663l289.354-.113 6.317-417.504L1539.65 22.9C1511.675 16.02 1426.053 0 1237.324 0 901.268 0 675.425 235.206 675.425 585.137v93.97H337v451.234h338.425V1920h451.234v-789.66h356.7l62.045-451.233H1126.66v-69.152c0-54.937 14.214-96.112 42.078-122.058" fill-rule="evenodd"></path> </g></svg>
+
+
+
+<svg fill="#000000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-215.04 -215.04 942.08 942.08" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-215.04" y="-215.04" width="942.08" height="942.08" rx="471.04" fill="#ffc03d" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="7935ec95c421cee6d86eb22ecd12f847"> <path style="display: inline;" d="M459.186,151.787c0.203,4.501,0.305,9.023,0.305,13.565 c0,138.542-105.461,298.285-298.274,298.285c-59.209,0-114.322-17.357-160.716-47.104c8.212,0.973,16.546,1.47,25.012,1.47 c49.121,0,94.318-16.759,130.209-44.884c-45.887-0.841-84.596-31.154-97.938-72.804c6.408,1.227,12.968,1.886,19.73,1.886 c9.55,0,18.816-1.287,27.617-3.68c-47.955-9.633-84.1-52.001-84.1-102.795c0-0.446,0-0.882,0.011-1.318 c14.133,7.847,30.294,12.562,47.488,13.109c-28.134-18.796-46.637-50.885-46.637-87.262c0-19.212,5.16-37.218,14.193-52.7 c51.707,63.426,128.941,105.156,216.072,109.536c-1.784-7.675-2.718-15.674-2.718-23.896c0-57.891,46.941-104.832,104.832-104.832 c30.173,0,57.404,12.734,76.525,33.102c23.887-4.694,46.313-13.423,66.569-25.438c-7.827,24.485-24.434,45.025-46.089,58.002 c21.209-2.535,41.426-8.171,60.222-16.505C497.448,118.542,479.666,137.004,459.186,151.787z"> </path> </g> </g></svg>
+
+
+<svg fill="#000000" width="40px" height="40px" viewBox="-6.08 -6.08 44.16 44.16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-6.08" y="-6.08" width="44.16" height="44.16" rx="22.08" fill="#ffc03d" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M24.325 8.309s-2.655-.334-8.357-.334c-5.517 0-8.294.334-8.294.334A2.675 2.675 0 0 0 5 10.984v10.034a2.675 2.675 0 0 0 2.674 2.676s2.582.332 8.294.332c5.709 0 8.357-.332 8.357-.332A2.673 2.673 0 0 0 27 21.018V10.982a2.673 2.673 0 0 0-2.675-2.673zM13.061 19.975V12.03L20.195 16l-7.134 3.975z"></path></g></svg>
+
+
+<svg width="40px" height="40px" viewBox="-7 -7 34.00 34.00" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-7" y="-7" width="34.00" height="34.00" rx="17" fill="#ffc03d" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>instagram [#167]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]"> </path> </g> </g> </g> </g></svg>
+
+
+
+<svg fill="#000000" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="40px" viewBox="-304.02 -304.02 1160.81 1160.81" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"><rect x="-304.02" y="-304.02" width="1160.81" height="1160.81" rx="580.405" fill="#ffc03d" strokewidth="0"></rect></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95 C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"></path> <path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95 C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"></path> <path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846 c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192 c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666 c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343 c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627 c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48 S535.836,228.581,525.732,215.282z"></path> </g> </g> </g></svg>
+
+            </div>
+       
           </div>
           <div class="col-md-6 col-xl-4 contact-form rounded-4">
             <form
@@ -1575,7 +1606,7 @@
     <!-- footer end -->
 
     <!-- custom javascript -->
-    <script src="../script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/swiper-script/swiper-script.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - MITCO-Mehta Transport Corporation</title>
     <!-- custome css -->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- bootstrap -->
 
     <!-- fonts -->
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../assets/css-var/var.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="../assets/swiper-css/swiper.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.css" />
     <!-- media query -->
     <link rel="stylesheet" href="../assets/media-query/meddia-query.css" />
   </head>
@@ -104,8 +104,8 @@
               </g>
             </svg>
           </div>
-           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" />
-            <div class="offcanvas-body"></a>
+           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" /></a>
+            <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">Home</a>
@@ -730,76 +730,79 @@
 
     <main>
       <!-- responsibilities banner start-->
-      <section class="banner-section position-relative">
-        <div class="video">
-          <img src="../assets/img/respons-bg.jpg" alt="" />
-          <div class="over-lay"></div>
-          <div
-            class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
-          >
-            <div class="logo w-100">
-              <a href="../pages/home.html">
-                <img
-                  src="../assets/img/logo2.png"
-                  alt="logo"
-                  width="594"
-                  class="w-md-25"
-                />
-              </a>
-            </div>
-            <div class="menu-btn">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"
-                  >MENU
-                  <svg
-                    fill="#000000"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
+      
+      <section class="banner-section position-relative container-fluid p-0">
+        <div class="row g-0">
+          <!-- Video Section -->
+          <div class="video col-12 position-relative">
+            <img src="../assets/img/respons-bg.jpg" alt="" class="img-fluid w-100" />
+            <div class="over-lay"></div>
+      
+            <!-- Header Section -->
+            <div
+              class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
+            >
+              <div class="logo w-100">
+                <a href="../pages/home.html">
+                  <img
+                    src="../assets/img/logo2.png"
+                    alt="logo"
+                    width="594"
+                    class="img-fluid w-md-25"
+                  />
+                </a>
+              </div>
+              <div class="menu-btn">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon">
+                    MENU
+                    <svg
+                      fill="#000000"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"
                       ></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Banner Info -->
+            <div class="banner-info position-absolute bottom-50 w-100">
+              <div class="banner-h1 text-center">
+                <h1>Social Responsibility</h1>
+              </div>
             </div>
           </div>
-          <div class="banner-info position-absolute bottom-50 w-100">
-            <div class="banner-h1 text-center">
-              <h1>Social Responsibility</h1>
-            </div>
+      
+          <!-- Button Section -->
+          <div
+            class="banner-btn col-12 position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
+          >
+            <button class="rounded-2">View Our Services</button>
           </div>
-        </div>
-        <div
-          class="banner-btn position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
-        >
-          <button class="rounded-2">View Our Services</button>
         </div>
       </section>
+      
       <!-- responsibilities banner end-->
 
       <!-- info start -->
       <section class="container">
         <div class="row">
           <div class="col-md-2"></div>
-          <div class="col-md-8">
+          <div class="col-md-8 my-5 lh-lg">
             <p class="my-3 text-center">
               Working for the community, such as volunteering, giving blood
               donations, and working at a food bank or animal shelter.
@@ -824,53 +827,75 @@
       <!-- info end -->
 
       <!-- message start -->
-      <section class="message-section position-relative z-1">
-        <div class="container">
+      <section class="message-section  position-relative z-1 mt-5">
+       <div class="container">
+        
+        <div class="message row justify-content-center align-items-center mb-5">
           <div
-            class="message row justify-content-center align-items-center mb-5"
+            class="col-xl-10 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3 rounded-5"
           >
-            <div
-              class="col-xl-10 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3 rounded-5"
-            >
-              <div class="message-h2">
-                <h2>Not sure which solution fits you business needs?</h2>
-              </div>
+            <div class="message-h2">
+              <h2>Not sure which solution fits you business needs?</h2>
+            </div>
 
-              <div class="message-btn mt-5">
-                <button class="w-50">
-                  Contact Us
-                  <svg
-                    width="23px"
-                    height="23px"
-                    viewBox="0 0 16.00 16.00"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    transform="rotate(90)"
-                    stroke="#ffffff"
-                    stroke-width="0.00016"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke="#CCCCCC"
-                      stroke-width="0.128"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
-                        fill="#ffffff"
-                      ></path>
-                    </g>
-                  </svg>
-                </button>
-              </div>
+            <div class="message-btn mt-5">
+              <button class="w-50">
+                Contact Us
+                <svg
+                  width="23px"
+                  height="23px"
+                  viewBox="0 0 16.00 16.00"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="rotate(90)"
+                  stroke="#ffffff"
+                  stroke-width="0.00016"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#CCCCCC"
+                    stroke-width="0.128"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
             </div>
           </div>
+
         </div>
+       </div>
       </section>
       <!-- message end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <!-- footer start -->
     <footer class="w-100">
@@ -1553,7 +1578,7 @@
     <!-- footer end -->
 
     <!-- custom javascript -->
-    <script src="../script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/swiper-script/swiper-script.js"></script>
   </body>
 </html>

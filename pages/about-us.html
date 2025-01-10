@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - MITCO-Mehta Transport Corporation</title>
     <!-- custome css -->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- bootstrap -->
 
     <!-- fonts -->
@@ -37,15 +37,9 @@
       rel="stylesheet"
       href="../assets/fonts/pxiEyp8kv8JHgFVrJJfecg.woff2"
     />
-    <!-- animation -->
-    <link rel="stylesheet" href="../assets/animations/anim.css" />
-    <!-- css var -->
-    <link rel="stylesheet" href="../assets/css-var/var.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="../assets/swiper-css/swiper.css" />
-    <!-- media query -->
-    <link rel="stylesheet" href="../assets/media-query/meddia-query.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.css" />
   </head>
   <body>
     <!-- hamburger overlay start -->
@@ -104,9 +98,14 @@
               </g>
             </svg>
           </div>
-          
-           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" />
-            <div class="offcanvas-body"></a>
+
+          <a href="../pages/home.html">
+            <img
+              src="../assets/img/logo2.png"
+              alt="logo"
+              style="width: 90%; margin: 0 16px"
+          /></a>
+          <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">Home</a>
@@ -731,169 +730,280 @@
 
     <main>
       <!-- about banner start-->
-      <section class="banner-section position-relative">
-        <div class="video">
-          <img src="../assets/img/about-bg.jpg" alt="" />
-          <div class="over-lay"></div>
-          <div
-            class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
-          >
-            <div class="logo w-100">
-              <a href="../pages/home.html">
-                <img
-                  src="../assets/img/logo2.png"
-                  alt="logo"
-                  width="594"
-                  class="w-md-25"
-                />
-              </a>
-            </div>
-            <div class="menu-btn">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"
-                  >MENU
-                  <svg
-                    fill="#000000"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
+      <section class="banner-section position-relative container-fluid p-0">
+        <div class="row g-0">
+          <!-- Video Section -->
+          <div class="video col-12 position-relative">
+            <img
+              src="../assets/img/about-bg.jpg"
+              alt=""
+              class="img-fluid w-100"
+            />
+            <div class="over-lay"></div>
+
+            <!-- Header Section -->
+            <div
+              class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
+            >
+              <div class="logo w-100">
+                <a href="../pages/home.html">
+                  <img
+                    src="../assets/img/logo2.png"
+                    alt="logo"
+                    width="594"
+                    class="img-fluid w-md-25"
+                  />
+                </a>
+              </div>
+              <div class="menu-btn">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon">
+                    MENU
+                    <svg
+                      fill="#000000"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"
                       ></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Banner Info -->
+            <div class="banner-info position-absolute bottom-50 w-100">
+              <div class="banner-h1 text-center">
+                <h1>About Us</h1>
+              </div>
             </div>
           </div>
-          <div class="banner-info position-absolute bottom-50 w-100">
-            <div class="banner-h1 text-center"><h1>About Us</h1></div>
+
+          <!-- Button Section -->
+          <div
+            class="banner-btn col-12 position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
+          >
+            <button class="rounded-2">View Our Services</button>
           </div>
-        </div>
-        <div
-          class="banner-btn position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
-        >
-          <button class="rounded-2">View Our Services</button>
         </div>
       </section>
       <!-- about banner end-->
 
       <!-- about section start -->
-      <section id="about-section container-fluid">
-        <div
-          class="about row align-items-center h-auto px-lg-5 px-md-0 px-lg-0 py-5 justify-content-center gap-5"
-        >
-          <div class="col-md-4">
-            <div class="w-50">
-              <h4>ABOUT US</h4>
-            </div>
-            <div class="lg-w-75 md-w-100">
-              <h2>We Are The best Logistics & Transport Company In India</h2>
-            </div>
-            <div class="lg-w-75 md-w-100 mb-5">
-              <p class="mb-4">
-                Selecting a logistics firm is an important decision for your
-                company. Your company must be able to depend on its logistics in
-                order to uphold and continue its own engagement of quality and
-                services towards your own customers while considering service
-                level, flexibility, and cost. At
-                <strong>Mehta Logistics</strong>, you receive so much more than
-                just a standard logistics company. We know that true success is
-                about customer satisfaction, so we’ve made it our goal to
-                continue to develop the services that will save our customers
-                time and money. By being a customer-obsessed company,
-                <strong>MEHTA TRANSPORT</strong> can elaborate a tailor-made
-                solution for all its customers. At MTCOI, we listen, adapt, and
-                provide efficient results for all your needs. You choose us
-                because we are and have:
-              </p>
+      <section id="about-section">
+        <div class="container-fluid">
+          <div
+            class="about row align-items-center h-auto px-md-0 px-lg-0 py-5 justify-content-center gap-3"
+          >
+            <div class="col-md-4">
+              <div class="w-50">
+                <h4>ABOUT US</h4>
+              </div>
+              <div class="lg-w-75 md-w-100">
+                <h2>We Are The best Logistics & Transport Company In India</h2>
+              </div>
+              <div class="lg-w-75 md-w-100 mb-5">
+                <p class="mb-4">
+                  Selecting a logistics firm is an important decision for your
+                  company. Your company must be able to depend on its logistics
+                  in order to uphold and continue its own engagement of quality
+                  and services towards your own customers while considering
+                  service level, flexibility, and cost. At
+                  <strong>Mehta Logistics</strong>, you receive so much more
+                  than just a standard logistics company. We know that true
+                  success is about customer satisfaction, so we’ve made it our
+                  goal to continue to develop the services that will save our
+                  customers time and money. By being a customer-obsessed
+                  company, <strong>MEHTA TRANSPORT</strong> can elaborate a
+                  tailor-made solution for all its customers. At MTCOI, we
+                  listen, adapt, and provide efficient results for all your
+                  needs. You choose us because we are and have:
+                </p>
 
-              <p>
-                In addition to all of the above, we also provide in-transit
-                insurance of your goods. You get an end to end package with us
-                and a comprehensive solution for all your needs!
-              </p>
-            </div>
-            <div>
-              <ul class="elementor-icon-list-items">
-                <li class="elementor-icon-list-item">
-                  <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                  </span>
-                  <span class="elementor-icon-list-text"
-                    >COLLABORATIVE CUSTOMER RELATIONSHIPS</span
-                  >
-                </li>
-                <li class="elementor-icon-list-item">
-                  <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                  </span>
-                  <span class="elementor-icon-list-text"
-                    >OPTIMIZED NETWORK TO SAVE YOU MONEY</span
-                  >
-                </li>
-                <li class="elementor-icon-list-item">
-                  <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                  </span>
-                  <span class="elementor-icon-list-text"
-                    >PROVEN INDUSTRY EXPERTISE</span
-                  >
-                </li>
-                <li class="elementor-icon-list-item">
-                  <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                  </span>
-                  <span class="elementor-icon-list-text"
-                    >FLEXIBLE TRANSPORTATION SOLUTIONS</span
-                  >
-                </li>
-                <li class="elementor-icon-list-item">
-                  <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                  </span>
-                  <span class="elementor-icon-list-text"
-                    >HIGHLY COMPETITIVE PRICE</span
-                  >
-                </li>
-                <li class="elementor-icon-list-item">
-                  <span class="elementor-icon-list-icon">
-                    <i aria-hidden="true" class="fas fa-dot-circle"></i>
-                  </span>
-                  <span class="elementor-icon-list-text"
-                    >EXPERIENCED AND FRIENDLY STAFF</span
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="message-vid-btn rounded-0 pt-4">
-              <button>Watch Our YouTube Chanel</button>
-            </div>
-          </div>
+                <p>
+                  In addition to all of the above, we also provide in-transit
+                  insurance of your goods. You get an end to end package with us
+                  and a comprehensive solution for all your needs!
+                </p>
+              </div>
+              <div>
+                <ul class="elementor-icon-list-items">
+                  <li class="elementor-icon-list-item my-2">
+                    <span class="elementor-icon-list-icon">
+                      <i aria-hidden="true" class="fas fa-dot-circle"></i>
+                    </span>
 
-          <div class="col-md-4 about-banner-bg">
-            <img
-              src="../assets/img/about-us-bg.jpg"
-              loading="lazy"
-              alt="untitled"
-              class="w-100"
-            />
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="2" fill="#000000"></circle>
+                      </g>
+                    </svg>
+
+                    <span>COLLABORATIVE CUSTOMER RELATIONSHIPS</span>
+                  </li>
+                  <li class="elementor-icon-list-item my-2">
+                    <span class="elementor-icon-list-icon">
+                      <i aria-hidden="true" class="fas fa-dot-circle"></i>
+                    </span>
+
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="2" fill="#000000"></circle>
+                      </g>
+                    </svg>
+
+                    <span>OPTIMIZED NETWORK TO SAVE YOU MONEY</span>
+                  </li>
+                  <li class="elementor-icon-list-item my-2">
+                    <span class="elementor-icon-list-icon">
+                      <i aria-hidden="true" class="fas fa-dot-circle"></i>
+                    </span>
+
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="2" fill="#000000"></circle>
+                      </g>
+                    </svg>
+
+                    <span>PROVEN INDUSTRY EXPERTISE</span>
+                  </li>
+                  <li class="elementor-icon-list-item my-2">
+                    <span class="elementor-icon-list-icon">
+                      <i aria-hidden="true" class="fas fa-dot-circle"></i>
+                    </span>
+
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="2" fill="#000000"></circle>
+                      </g>
+                    </svg>
+
+                    <span>FLEXIBLE TRANSPORTATION SOLUTIONS</span>
+                  </li>
+                  <li class="elementor-icon-list-item my-2">
+                    <span class="elementor-icon-list-icon">
+                      <i aria-hidden="true" class="fas fa-dot-circle"></i>
+                    </span>
+
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="2" fill="#000000"></circle>
+                      </g>
+                    </svg>
+
+                    <span>HIGHLY COMPETITIVE PRICE</span>
+                  </li>
+                  <li class="elementor-icon-list-item my-2">
+                    <span class="elementor-icon-list-icon">
+                      <i aria-hidden="true" class="fas fa-dot-circle"></i>
+                    </span>
+
+                    <svg
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="2" fill="#000000"></circle>
+                      </g>
+                    </svg>
+
+                    <span>EXPERIENCED AND FRIENDLY STAFF</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="about-page-btn rounded-0 pt-4">
+                <button>OUR SERVICES</button>
+              </div>
+            </div>
+
+            <div class="col-md-4 about-banner-bg">
+              <img
+                src="../assets/img/about-us-bg.jpg"
+                loading="lazy"
+                alt="untitled"
+                class="w-100"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -917,36 +1027,38 @@
       <!-- portfolio end -->
 
       <!-- our vision start -->
-      <section id="about-section container-fluid">
-        <div
-          class="about row align-items-center h-auto px-lg-5 px-md-0 px-lg-0 py-5 justify-content-center gap-5"
-        >
-          <div class="col-md-4">
-            <img
-              src="../assets/img/our-vison-img.png"
-              loading="lazy"
-              alt="untitled"
-              class="w-100"
-            />
-          </div>
-          <div class="col-md-4">
-            <div class="w-50">
-              <h4>OUR VISION</h4>
+      <section id="about-section">
+        <div class="container-fluid">
+          <div
+            class="about row align-items-center h-auto px-md-0 px-lg-0 py-5 justify-content-center gap-5"
+          >
+            <div class="col-md-4">
+              <img
+                src="../assets/img/our-vison-img.png"
+                loading="lazy"
+                alt="untitled"
+                class="w-100"
+              />
             </div>
+            <div class="col-md-4">
+              <div class="w-50 my-3">
+                <h4 class="fs-3">OUR VISION</h4>
+              </div>
 
-            <div class="lg-w-75 md-w-100 mb-5">
-              <p class="mb-4">
-                We are a team of professionals committed to corporate
-                excellence. “We spell out ourselves a most Reliable, Trusted and
-                Preferred resource partner, by the entire logistics value chain,
-                providing Cost Effective, Innovative and Best-Fit solutions for
-                customers, ultimately enhancing value for its all Stakeholders”.
-                We thrive on innovations through dedication, commitment, team
-                work, sincerity &amp; Honesty to achieve 100% customer
-                satisfaction. We have a vision of making Mehta Transport
-                Corporation a Household name all over India among top logistic
-                companies.
-              </p>
+              <div class="lg-w-75 md-w-100 mb-5 lh-lg ">
+                <p class="mb-4 fs-6">
+                  We are a team of professionals committed to corporate
+                  excellence. “We spell out ourselves a most Reliable, Trusted
+                  and Preferred resource partner, by the entire logistics value
+                  chain, providing Cost Effective, Innovative and Best-Fit
+                  solutions for customers, ultimately enhancing value for its
+                  all Stakeholders”. We thrive on innovations through
+                  dedication, commitment, team work, sincerity &amp; Honesty to
+                  achieve 100% customer satisfaction. We have a vision of making
+                  Mehta Transport Corporation a Household name all over India
+                  among top logistic companies.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -954,48 +1066,53 @@
       <!-- our vision end -->
 
       <!-- our mission start -->
-      <section id="about-section container-fluid">
-        <div
-          class="about row align-items-center h-auto px-lg-5 px-md-0 px-lg-0 py-5 justify-content-center gap-5"
-        >
-          <div class="col-md-4">
-            <div class="w-50">
-              <h4>OUR MISSION</h4>
+      <section id="about-section">
+        <div class="container-fluid">
+          <div
+            class="about row align-items-center h-auto px-md-0 px-lg-0 py-5 justify-content-center gap-5"
+          >
+            <div class="col-md-4">
+              <div class="w-50 my-3">
+                <h4 class="fs-3">OUR MISSION</h4>
+              </div>
+
+              <div class="lg-w-75 md-w-100 mb-5 lh-lg">
+                <p class="mb-4 fs-6">
+                  We aspire to develop high competency and achieve ZERO ERROR in
+                  service through high technology and be synonymous with quality
+                  service and to become 2500 crores group by 2025.
+                </p>
+
+                <ul>
+                  <li class="mb-4 fs-6">
+                    To be the most reliable and trusted service provider, by
+                    adhering to commitments with endeavor for zero defective,
+                    on-time delivery and standing by customers, in their dire
+                    need too
+                  </li>
+                </ul>
+                <p class="mb-4 fs-6">
+                  Aim for customer delight, by providing all encompassing
+                  logistics solutions by understanding their critical
+                  requirements and accordingly offering innovative solutions.
+                </p>
+                <p class="mb-4 fs-6">
+                  To be a responsible corporate citizen contributing towards
+                  society, protecting environment, adhering to safety and health
+                  of people.
+                </p>
+                <p></p>
+              </div>
             </div>
 
-            <div class="lg-w-75 md-w-100 mb-5">
-              <p class="mb-4">
-                We aspire to develop high competency and achieve ZERO ERROR in
-                service through high technology and be synonymous with quality
-                service and to become 2500 crores group by 2025.
-              </p>
-              <p class="mb-4">
-                To be the most reliable and trusted service provider, by
-                adhering to commitments with endeavor for zero defective,
-                on-time delivery and standing by customers, in their dire need
-                too
-              </p>
-              <p class="mb-4">
-                Aim for customer delight, by providing all encompassing
-                logistics solutions by understanding their critical requirements
-                and accordingly offering innovative solutions.
-              </p>
-              <p class="mb-4">
-                To be a responsible corporate citizen contributing towards
-                society, protecting environment, adhering to safety and health
-                of people.
-              </p>
-              <p></p>
+            <div class="col-md-4">
+              <img
+                src="../assets/img/our-mission-img.png"
+                loading="lazy"
+                alt="untitled"
+                class="w-100"
+              />
             </div>
-          </div>
-
-          <div class="col-md-4">
-            <img
-              src="../assets/img/our-mission-img.png"
-              loading="lazy"
-              alt="untitled"
-              class="w-100"
-            />
           </div>
         </div>
       </section>
@@ -1003,12 +1120,25 @@
 
       <!-- about message start -->
       <section class="contact-section container-fluid">
-        <div class="contact row justify-content-center">
-          <div class="col-md-6 col-xl-4 contact-form">
-            <form
-              class="w-100 d-flex flex-column align-items-center"
+        <div class="about row justify-content-center">
+          <div class="col-md-6 col-xl-4 about-msg my-5 w-75 px-5 rounded-4">
+            <div
+              class="w-100 "
               style="padding: 84px 0"
-            ></form>
+            >
+            <svg width="65px" height="65px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#fdbd36"></path> <path d="M8.19 16.78H9.67999C10.77 16.78 11.62 15.93 11.62 14.84V13.35C11.62 12.26 10.77 11.41 9.67999 11.41H7.77C7.85 9.59997 8.27 9.33 9.48 8.62C9.84 8.41 9.95001 7.95003 9.74001 7.59003C9.60001 7.35003 9.35 7.21997 9.09 7.21997C8.96 7.21997 8.83001 7.25001 8.71001 7.32001C6.92001 8.38001 6.25 9.07002 6.25 12.15V14.82C6.25 15.91 7.12 16.78 8.19 16.78Z" fill="#fdbd36"></path> <path d="M14.3209 16.78H15.8109C16.9009 16.78 17.7509 15.93 17.7509 14.84V13.35C17.7509 12.26 16.9009 11.41 15.8109 11.41H13.9008C13.9808 9.59997 14.4009 9.33 15.6109 8.62C15.9709 8.41 16.0808 7.95003 15.8708 7.59003C15.7308 7.35003 15.4809 7.21997 15.2209 7.21997C15.0909 7.21997 14.9609 7.25001 14.8409 7.32001C13.0509 8.38001 12.3809 9.07002 12.3809 12.15V14.82C12.3909 15.91 13.2609 16.78 14.3209 16.78Z" fill="#fdbd36"></path> </g></svg>
+              <div>
+                <p class="text-jusify fs-4">
+                  “To provide logistic services to customer needs and
+                  satisfaction, partner in customer growth & happiness, fulfill
+                  dreams of associate people, customer, employees and same group
+                  of companies. Each & Everyone who are associated with us got
+                  what they deserve and develop in all aspect, making logistic
+                  requirement of customer easy and complete services on
+                  committed time.”
+                </p class="text-jusify">
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1146,7 +1276,6 @@
       </section>
       <!-- our service end -->
 
-    
       <!-- our client section start -->
       <section class="client-section client-parallax position-relative z-1">
         <div class="container-fluid">
@@ -1218,51 +1347,51 @@
       <!-- our client section end -->
 
       <!-- message start -->
-      <section class="message-section  position-relative z-1">
-       <div class="container">
-        
-        <div class="message row justify-content-center align-items-center mb-5">
+      <section class="message-section position-relative z-1 mt-5">
+        <div class="container">
           <div
-            class="col-xl-10 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3 rounded-5"
+            class="message row justify-content-center align-items-center mb-5"
           >
-            <div class="message-h2">
-              <h2>Not sure which solution fits you business needs?</h2>
-            </div>
+            <div
+              class="col-xl-10 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3 rounded-5"
+            >
+              <div class="message-h2">
+                <h2>Not sure which solution fits you business needs?</h2>
+              </div>
 
-            <div class="message-btn mt-5">
-              <button class="w-50">
-                Contact Us
-                <svg
-                  width="23px"
-                  height="23px"
-                  viewBox="0 0 16.00 16.00"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                  transform="rotate(90)"
-                  stroke="#ffffff"
-                  stroke-width="0.00016"
-                >
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                  <g
-                    id="SVGRepo_tracerCarrier"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke="#CCCCCC"
-                    stroke-width="0.128"
-                  ></g>
-                  <g id="SVGRepo_iconCarrier">
-                    <path
-                      d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
-                      fill="#ffffff"
-                    ></path>
-                  </g>
-                </svg>
-              </button>
+              <div class="message-btn mt-5">
+                <button class="w-50">
+                  Contact Us
+                  <svg
+                    width="23px"
+                    height="23px"
+                    viewBox="0 0 16.00 16.00"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    transform="rotate(90)"
+                    stroke="#ffffff"
+                    stroke-width="0.00016"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke="#CCCCCC"
+                      stroke-width="0.128"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
+                        fill="#ffffff"
+                      ></path>
+                    </g>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-
         </div>
-       </div>
       </section>
       <!-- message end -->
     </main>
@@ -1947,7 +2076,7 @@
     <!-- footer end -->
 
     <!-- custom javascript -->
-    <script src="../script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/swiper-script/swiper-script.js"></script>
   </body>
 </html>

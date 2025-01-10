@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - MITCO-Mehta Transport Corporation</title>
     <!-- custome css -->
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <!-- bootstrap -->
 
     <!-- fonts -->
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="../assets/css-var/var.css" />
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
     <!-- swiper css -->
-    <link rel="stylesheet" href="../assets/swiper-css/swiper.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.css" />
     <!-- media query -->
     <link rel="stylesheet" href="../assets/media-query/meddia-query.css" />
   </head>
@@ -104,8 +104,8 @@
               </g>
             </svg>
           </div>
-           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" />
-            <div class="offcanvas-body"></a>
+           <a href="../pages/home.html"> <img src="../assets/img/logo2.png" alt="logo" style="width: 90%;margin: 0 16px;" /></a>
+            <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="">Home</a>
@@ -730,71 +730,76 @@
 
     <main>
       <!-- Banner section start -->
-      <section class="banner-section position-relative">
-        <div class="video">
-          <img src="../assets/img/our-services-bg.jpg" alt="" />
-          <div class="over-lay"></div>
-          <div
-            class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
-          >
-            <div class="logo w-100">
-              <a href="../pages/home.html">
-                <img
-                  src="../assets/img/logo2.png"
-                  alt="logo"
-                  width="594"
-                  class="w-md-25"
-                />
-              </a>
-            </div>
-            <div class="menu-btn">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"
-                  >MENU
-                  <svg
-                    fill="#000000"
-                    width="25px"
-                    height="25px"
-                    viewBox="0 0 32 32"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
+     
+      <section class="banner-section position-relative container-fluid p-0">
+        <div class="row g-0">
+          <!-- Video Section -->
+          <div class="video col-12 position-relative">
+            <img src="../assets/img/our-services-bg.jpg" alt="" class="img-fluid w-100"/>
+            <div class="over-lay"></div>
+      
+            <!-- Header Section -->
+            <div
+              class="banner-header z-1 w-100 position-absolute top-0 start-0 d-flex align-items-center justify-content-between"
+            >
+              <div class="logo w-100">
+                <a href="../pages/home.html">
+                  <img
+                    src="../assets/img/logo2.png"
+                    alt="logo"
+                    width="594"
+                    class="img-fluid w-md-25"
+                  />
+                </a>
+              </div>
+              <div class="menu-btn">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon">
+                    MENU
+                    <svg
+                      fill="#000000"
+                      width="25px"
+                      height="25px"
+                      viewBox="0 0 32 32"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
                       <path
                         d="M6.001 7.128L6 10.438l19.998-.005L26 7.124zM6.001 21.566L6 24.876l19.998-.006.002-3.308zM6.001 14.341L6 17.65l19.998-.004.002-3.309z"
                       ></path>
-                    </g>
-                  </svg>
-                </span>
-              </button>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+      
+            <!-- Banner Info -->
+            <div class="banner-info position-absolute bottom-50 w-100">
+              <div class="banner-h1 text-center">
+                <h1>Our Services</h1>
+              </div>
             </div>
           </div>
-          <div class="banner-info position-absolute bottom-50 w-100">
-            <div class="banner-h1 text-center"><h1>Our Services</h1></div>
+      
+          <!-- Button Section -->
+          <div
+            class="banner-btn col-12 position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
+          >
+            <button class="rounded-2">View Our Services</button>
           </div>
         </div>
-        <div
-          class="banner-btn position-absolute d-lg-none d-sm-block d-md-flex d-sm-flex justify-content-md-center justify-content-sm-center w-100"
-        >
-          <button class="rounded-2">View Our Services</button>
-        </div>
       </section>
+      
       <!-- Banner section end -->
 
       <!-- our service start -->
-      <section class="our-service">
+      <section class="our-service container-fluid">
         <div class="service row py-5">
           <div class="col-md-12 col-xl-10 m-xl-auto m-md-0 p-md-0">
             <div class="d-flex flex-column lh-lg">
@@ -1030,127 +1035,173 @@
       <!-- our service end -->
 
       <!-- message start -->
-      <section class="contact-section">
-        <div class="contact row justify-content-center">
-          <div class="col-md-6 col-xl-4 contact-form">
-            <form
-              class="w-100 d-flex flex-column align-items-center"
+      <section class="contact-section container-fluid">
+        <div class="about row justify-content-center">
+          <div class="col-md-6 col-xl-4 about-msg my-5 w-75 px-5 rounded-4">
+            <div
+              class="w-100 "
               style="padding: 84px 0"
-            ></form>
+            >
+            <svg width="65px" height="65px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path opacity="0.4" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" fill="#fdbd36"></path> <path d="M8.19 16.78H9.67999C10.77 16.78 11.62 15.93 11.62 14.84V13.35C11.62 12.26 10.77 11.41 9.67999 11.41H7.77C7.85 9.59997 8.27 9.33 9.48 8.62C9.84 8.41 9.95001 7.95003 9.74001 7.59003C9.60001 7.35003 9.35 7.21997 9.09 7.21997C8.96 7.21997 8.83001 7.25001 8.71001 7.32001C6.92001 8.38001 6.25 9.07002 6.25 12.15V14.82C6.25 15.91 7.12 16.78 8.19 16.78Z" fill="#fdbd36"></path> <path d="M14.3209 16.78H15.8109C16.9009 16.78 17.7509 15.93 17.7509 14.84V13.35C17.7509 12.26 16.9009 11.41 15.8109 11.41H13.9008C13.9808 9.59997 14.4009 9.33 15.6109 8.62C15.9709 8.41 16.0808 7.95003 15.8708 7.59003C15.7308 7.35003 15.4809 7.21997 15.2209 7.21997C15.0909 7.21997 14.9609 7.25001 14.8409 7.32001C13.0509 8.38001 12.3809 9.07002 12.3809 12.15V14.82C12.3909 15.91 13.2609 16.78 14.3209 16.78Z" fill="#fdbd36"></path> </g></svg>
+              <div>
+                <p class="text-jusify fs-4">
+                  “To provide logistic services to customer needs and
+                  satisfaction, partner in customer growth & happiness, fulfill
+                  dreams of associate people, customer, employees and same group
+                  of companies. Each & Everyone who are associated with us got
+                  what they deserve and develop in all aspect, making logistic
+                  requirement of customer easy and complete services on
+                  committed time.”
+                </p class="text-jusify">
+              </div>
+            </div>
           </div>
         </div>
       </section>
+
       <!-- message end -->
 
       <!-- our client section start -->
       <section class="client-section client-parallax position-relative z-1">
-        <div class="client-overlay position-absolute z-3 w-100 h-100"></div>
-        <div class="client row justify-content-center align-items-center mb-5">
-          <div class="col-xl-11 col-md-12 z-3 p-5">
-            <div class="client-h5 text-center"><h5>Our Partners</h5></div>
-            <div class="client-h2 text-center mb-3"><h2>Our Clients</h2></div>
-            <div class="client-line bg-white m-auto"></div>
-            <div class="client-para text-center mb-5 mt-3 w-75 m-auto">
-              <p>
-                Discover the diverse range of clients we’ve had the privilege to
-                serve. From small startups to Fortune 500 companies, our client
-                portfolio showcases our commitment to excellence and innovation.
-              </p>
-            </div>
-            <div class="swiper mySwiper z-3">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../assets/img/27.png" alt="" />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="client-overlay position-absolute z-3 w-100 h-100"></div>
+            <div
+              class="client row justify-content-center align-items-center mb-5"
+            >
+              <div class="col-xl-11 col-md-12 z-3 p-5">
+                <div class="client-h5 text-center"><h5>Trust and Worth</h5></div>
+                <div class="client-h2 text-center mb-3">
+                  <h2>Our Clients</h2>
                 </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/29.png" alt="" />
+                <div class="client-line bg-white m-auto"></div>
+                <div class="client-para text-center mb-5 mt-3 w-75 m-auto">
+                  <p>
+                    Discover the diverse range of clients we’ve had the
+                    privilege to serve. From small startups to Fortune 500
+                    companies, our client portfolio showcases our commitment to
+                    excellence and innovation.
+                  </p>
                 </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/31.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/1 (1).png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/2.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/3.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/27.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/29.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/31.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/1 (1).png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/2.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../assets/img/3.png" alt="" />
+                <div class="swiper mySwiper z-3">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../assets/img/27.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/29.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/31.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/1 (1).png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/2.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/3.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/27.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/29.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/31.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/1 (1).png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/2.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/img/3.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
                 </div>
               </div>
-              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
       </section>
+
       <!-- our client section end -->
 
       <!-- message start -->
-      <section class="message-section position-relative z-1">
-        <div class="container">
+      <section class="message-section  position-relative z-1 mt-5">
+       <div class="container">
+        
+        <div class="message row justify-content-center align-items-center mb-5">
           <div
-            class="message row justify-content-center align-items-center mb-5"
+            class="col-xl-10 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3 rounded-5"
           >
-            <div
-              class="col-xl-10 col-md-12 col-sm-12 col-xl-6 col-lg-6 message-info z-3 rounded-5"
-            >
-              <div class="message-h2">
-                <h2>Not sure which solution fits you business needs?</h2>
-              </div>
+            <div class="message-h2">
+              <h2>Not sure which solution fits you business needs?</h2>
+            </div>
 
-              <div class="message-btn mt-5">
-                <button class="w-50">
-                  Contact Us
-                  <svg
-                    width="23px"
-                    height="23px"
-                    viewBox="0 0 16.00 16.00"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    transform="rotate(90)"
-                    stroke="#ffffff"
-                    stroke-width="0.00016"
-                  >
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g
-                      id="SVGRepo_tracerCarrier"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke="#CCCCCC"
-                      stroke-width="0.128"
-                    ></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path
-                        d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
-                        fill="#ffffff"
-                      ></path>
-                    </g>
-                  </svg>
-                </button>
-              </div>
+            <div class="message-btn mt-5">
+              <button class="w-50">
+                Contact Us
+                <svg
+                  width="23px"
+                  height="23px"
+                  viewBox="0 0 16.00 16.00"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  transform="rotate(90)"
+                  stroke="#ffffff"
+                  stroke-width="0.00016"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#CCCCCC"
+                    stroke-width="0.128"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M6 8L2 8L2 6L8 5.24536e-07L14 6L14 8L10 8L10 16L6 16L6 8Z"
+                      fill="#ffffff"
+                    ></path>
+                  </g>
+                </svg>
+              </button>
             </div>
           </div>
+
         </div>
+       </div>
       </section>
       <!-- message end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </main>
     <!-- footer start -->
     <footer class="w-100">
@@ -1833,7 +1884,7 @@
     <!-- footer end -->
 
     <!-- custom javascript -->
-    <script src="../script.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/swiper-script/swiper-script.js"></script>
   </body>
 </html>

@@ -296,6 +296,23 @@ main #about-section .about .yt-icon {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+main .about-page-btn button {
+  border: none;
+  padding-top: 12px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  background-color: var(--color-primary);
+  font-family: "Poppins", Sans-serif;
+  font-weight: 600;
+  color: var(--color-card);
+}
+main .contact-section .about-msg {
+  background-color: #fff;
+}
+main .contact-section .about {
+  background-color: #15162c;
+}
 /* contact style */
 main .contact-section .contact {
   background-color: #e0e0f2;
@@ -460,7 +477,7 @@ main .our-service .service .card-link a:hover {
 }
 /* choose us style */
 main .choose-us .choose-us-bg1 {
-  background-image: url(assets/img/many-transport-trucks-parked-service-station-sunset-ai-generative-1.jpg);
+  background-image: url(../img/many-transport-trucks-parked-service-station-sunset-ai-generative-1.jpg);
   background-size: cover;
   height: 500px;
   padding: 100px 0;
@@ -471,7 +488,7 @@ main .choose-us .choose-list li {
   font-weight: 600;
 }
 main .choose-us .choose-us-bg2 {
-  background-image: url(assets/img/2-1-scaled.jpg);
+  background-image: url(../img/2-1-scaled.jpg);
   background-size: cover;
   height: 500px;
   padding: 86px 0;
@@ -551,6 +568,7 @@ main .our-service2 .service-2 .card {
 }
 main .our-service2 .service-2 .card img {
   width: 100%;
+  height: 300px;
   transition: all 0.8s ease 0s;
   mix-blend-mode: normal;
   object-position: center center;
@@ -690,7 +708,7 @@ main .message-section .message .message-vid-btn button {
   padding: 12px 9px;
 }
 main .message-parallax {
-  background-image: url(assets/img/container-railways.jpg);
+  background-image: url(../img/container-railways.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -833,7 +851,7 @@ main .client-section .client .client-info {
 }
 
 main .client-parallax {
-  background-image: url(assets/img/container-railways.jpg);
+  background-image: url(../img/container-railways.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -888,6 +906,7 @@ main .our-blog .blog .card {
 }
 main .our-blog .blog .card img {
   width: 100%;
+  height: 300px;
   transition: all 0.8s ease 0s;
   mix-blend-mode: normal;
   object-position: center center;
@@ -897,7 +916,7 @@ main .our-blog .blog .card img {
 main .our-blog .blog .card img:hover {
   transform: scale(1.2);
 }
-main .our-blog .blog .blog-btn button {
+main .our-blog .blog .blog-btn button{
   padding: 11px 2px;
   border-radius: 50px;
   background-color: #212d45;
@@ -905,11 +924,16 @@ main .our-blog .blog .blog-btn button {
   margin-top: 20px;
   border: none;
 }
+main .our-blog .blog .blog-btn button a{
+    text-decoration: none;
+    color: white;
+}
 main .our-blog .blog .blog-btn button:hover {
   background-color: #ebad27;
   transition: all 0.4s ease-in;
   color: black;
 }
+
 /* footer style */
 footer .footer-container {
   background-color: #141420;
@@ -1042,4 +1066,175 @@ footer .footer-container .footer-line {
   transition: all 0.4s ease-in-out;
   cursor: pointer;
 }
-/* about us style */
+/* scroller */
+@keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+  /* ripple effect */
+  @keyframes wave {
+    0% {
+      box-shadow: 0 0 0px 0px rgb(215 201 25 / 50%);;
+    }
+    100% {
+      box-shadow: 0 0 0px 15px rgba(255, 255, 255, 0);
+    }
+  }
+  
+/* css var */
+:root {
+    --color-primary: #ffc03d;
+    --color-secondary: #ffb407;
+    --color-card:#1F1F2E;
+    --color-card-icon:#FFB407;
+    --color-card-para:#767676;
+    --color-card-a:#FF8200;
+  }
+
+  @media (min-width:1200px){
+    #frame2 {
+      width: 500px!important;
+      height: 50%;
+    }
+  }
+  @media (max-width: 1024px) {
+      #frame2 {
+        width: 350px !important;
+        height: 70%;
+      }
+      footer .footer-container .footer-logo img {
+        width: 212px;
+    }
+      main .contact-section .contact .contact-info {
+        padding: 3vw 3vw !important;
+      }
+      .our-service .service .card {
+        width: 25rem !important;
+      }
+      main .our-service .service .card-icon {
+        width: 10vw;
+      }
+      main .our-service .service .card-icon i {
+        font-size: 3.5vw !important;
+      }
+      main .contact-section .contact .contact-form form input,
+      select,
+      button {
+        width: 49vw;
+        margin: 20px 0;
+      }
+      main .message-section .message .message-vid-btn button {
+        width: 37vw;
+      }
+      .our-service2 .service2 .card {
+        width: 32rem !important;
+      }
+      main .swiper .swiper-slide img {
+        width: 150px;
+      }
+      main .banner-section .video .banner-h1 h1 {
+        font-size: 9vw;
+      }
+      main .banner-section .video .banner-h2 h2 {
+        font-size: 6vw !important;
+      }
+      main .banner-section .video .banner-para {
+        width: 22%;
+      }
+      main .banner-section .banner-btn {
+        bottom: 14%;
+        width: 100% !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .our-service .service .card {
+        width: 96vw !important;
+        margin: auto;
+      }
+    
+      main .our-service .service .card-icon {
+        width: 16vw;
+      }
+      main .our-service .service .card-icon {
+        padding: 39px 34px;
+        top: 11%;
+        left: 42%;
+      }
+      main .our-service .service .card-icon i {
+        font-size: 5.5vw !important;
+      }
+      #card {
+        width: 91vw !important;
+        margin: auto;
+      }
+      #frame2 {
+        width: 92vw !important;
+        height: 77%;
+      }
+      .our-team .team .card {
+        width: 90vw !important;
+        margin: auto;
+      }
+      .our-blog .blog .card {
+        width: 88vw !important;
+        margin: auto;
+      }
+      .banner-section .banner-btn {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+      }
+      main .banner-section .video .banner-para {
+        width: 41%;
+      }
+    }
+    @media (max-width: 500px) {
+      .logo img {
+        width: 10rem !important;
+      }
+      main .banner-section .video .menu-btn button {
+        padding: 7px 25px;
+        width: 123px;
+      }
+      .ham-overlay .ham-nav-list {
+        width: 100% !important;
+      }
+      main .banner-section .video .banner-para {
+        width: 67%;
+      }
+      .ham-logo img {
+        width: 22rem !important;
+      }
+      .navbar {
+        gap: 15px !important;
+      }
+      main .contact-section .contact .contact-form form input,
+      select,
+      button {
+        width: 96vw;
+        margin: 20px 0;
+      }
+      .choose-us .choose .choose-us-bg1 .chooseus-container{
+        width: 100%!important;
+        padding: 0 26px;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      #frame2 {
+        width: 35vw!important;
+        height: 70%;
+      }
+      .banner-btn {
+        display: block;
+      }
+      footer .footer-container .footer-logo img {
+        width: 212px;
+    }
+    }
+    
