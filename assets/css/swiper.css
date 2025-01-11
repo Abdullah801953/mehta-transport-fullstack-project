@@ -45,10 +45,7 @@
   z-index: 1;
   display: flex;
   transition-property: transform;
-  transition-timing-function: var(
-    --swiper-wrapper-transition-timing-function,
-    initial
-  );
+  transition-timing-function: linear!important;
   box-sizing: content-box;
 }
 .swiper-android .swiper-slide,
@@ -710,10 +707,11 @@ button.swiper-pagination-bullet {
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .swiper-slide img {

@@ -11907,21 +11907,28 @@ var swiper = new Swiper(".mySwiper", {
 const topNav = document.querySelector(".topNav");
 const bottomNav = document.querySelector(".banner-header");
 let lastScrollY = window.scrollY;
+
 window.addEventListener("scroll", () => {
   let currentScrollY = window.scrollY;
 
   if (currentScrollY > lastScrollY) {
-    // Scrolling down: Hide top navbar and show bottom navbar
-    topNav.style.display = "none"; // Slide top navbar out
-    bottomNav.style.transform = "translateY(0%)";  // Slide bottom navbar in
-    bottomNav.style.backgroundColor = "#1f1f2e";
-    bottomNav.style.transition = "transform 0.3s ease-in-out, background-color 0.3s ease-in-out";
+    // Scrolling down: Hide top navbar, show bottom navbar
+    topNav.style.transform = "translateY(-100%)"; // Hide top navbar
+    bottomNav.style.transform = "translateY(0%)"; // Show bottom navbar
+    bottomNav.style.backgroundColor = "#1f1f2e"; // Set bottom navbar background
+  } else if (currentScrollY === 0) {
+    // At the top of the page: Show both navbars, transparent bottom navbar
     
+    topNav.style.transform = "translateY(0%)"; // Show top navbar
+    bottomNav.style.transform = "translateY(0%)"; // Show bottom navbar
+    bottomNav.style.backgroundColor = "transparent"; // Make bottom navbar transparent
   } else {
-    // Scrolling up: Show top navbar and hide bottom navbar
-    topNav.style.transform = "translateY(0)";     // Slide top navbar in
-    bottomNav.style.transform = "translateY(0%)"; // Slide bottom navbar out
+    // Scrolling up: Show both navbars
+    topNav.style.transform = "translateY(0%)"; // Show top navbar
+    bottomNav.style.transform = "translateY(0%)"; // Keep bottom navbar visible
+    bottomNav.style.backgroundColor = "#1f1f2e"; // Ensure background is set
   }
 
   lastScrollY = currentScrollY;
 });
+
