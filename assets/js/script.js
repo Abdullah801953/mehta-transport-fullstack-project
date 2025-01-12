@@ -11913,14 +11913,13 @@ window.addEventListener("scroll", () => {
 
   if (currentScrollY > lastScrollY) {
     // Scrolling down: Hide top navbar, show bottom navbar
-    topNav.style.transform = "translateY(-100%)"; // Hide top navbar
-    bottomNav.style.transform = "translateY(0%)"; // Show bottom navbar
+    // topNav.style.transform = "translateY(-100%)"; // Hide top navbar
+    // bottomNav.style.transform = "translateY(0%)"; // Show bottom navbar
     bottomNav.style.backgroundColor = "#1f1f2e"; // Set bottom navbar background
   } else if (currentScrollY === 0) {
     // At the top of the page: Show both navbars, transparent bottom navbar
     
-    topNav.style.transform = "translateY(0%)"; // Show top navbar
-    bottomNav.style.transform = "translateY(0%)"; // Show bottom navbar
+    
     bottomNav.style.backgroundColor = "transparent"; // Make bottom navbar transparent
   } else {
     // Scrolling up: Show both navbars

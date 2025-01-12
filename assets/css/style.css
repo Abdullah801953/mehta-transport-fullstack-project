@@ -99,13 +99,14 @@ span {
   font-style: normal;
 }
 /* nav style */
-header nav {
+.topNav {
   background-color: #1f1f2e;
   position: fixed;
   top: 0;
   left: 0;
   transform: translateY(0%);
   transition: transform 0.3s ease-in-out;
+  z-index: 100;
 }
 .navbar.show {
   display: block; /* Show when active */
@@ -146,7 +147,7 @@ header nav ul li .track-cons:hover {
 /* banner style */
 main .video .banner-header {
   padding: 10px 40px 10px 40px;
-  top: 0;          /* Stick to the top of the page */
+  top: 65px;          /* Stick to the top of the page */
   left: 0;
   transform: translateY(0%); /* Initially hide it */
   background-color: transparent;
@@ -329,6 +330,30 @@ main .contact-section .about {
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.banner-section .about-banner .banner-header{
+  top: 65px;
+}
+.banner-section .service-bg .banner-header{
+  top: 65px!important;
+}
+.banner-section .client-bg .banner-header{
+  top: 65px!important;
+}
+.banner-section .branch-bg .banner-header{
+  top: 65px!important;
+}
+.banner-section .achivment-bg .banner-header{
+  top: 65px!important;
+}
+.banner-section .respons-bg .banner-header{
+  top: 65px!important;
+}
+.banner-section .blog-bg .banner-header{
+  top: 65px!important;
+}
+.banner-section .contact-bg .banner-header{
+  top: 65px!important;
 }
 .banner-section .about-banner .over-lay {
   position: absolute;
@@ -601,7 +626,7 @@ main .banner-section .service-bg .menu-btn button span {
 main .choose-us .choose-us-bg1 {
   background-image: url(../img/many-transport-trucks-parked-service-station-sunset-ai-generative-1.jpg);
   background-size: cover;
-  height: 500px;
+  height: auto;
   padding: 100px 0;
 }
 main .choose-us .choose-list li {
@@ -612,7 +637,7 @@ main .choose-us .choose-list li {
 main .choose-us .choose-us-bg2 {
   background-image: url(../img/2-1-scaled.jpg);
   background-size: cover;
-  height: 500px;
+  height: auto!important;
   padding: 86px 0;
 }
 main .choose-us .choose-h6 h6 {
@@ -739,7 +764,8 @@ main .message-section .message .message-btn button {
   color: #ffffff;
   border-radius: 0;
   border: none;
-  padding: 12px 9px;
+  padding: 12px 44px;
+  width: auto;
 }
 
 #tabs2 > section,
@@ -828,6 +854,8 @@ main .message-section .message .message-vid-btn button {
   border-radius: 0;
   border: none;
   padding: 12px 9px;
+  width: auto!important;
+ 
 }
 main .message-parallax {
   background-image: url(../img/container-railways.jpg);
@@ -936,6 +964,8 @@ main .our-team .team .team-btn button {
   fill: #ffffff;
   color: #ffffff;
   border: none;
+  width: auto!important;
+  padding: 0 13px;
 }
 main .our-team .team .team-btn button:hover {
   background-color: #ebad27;
@@ -1709,9 +1739,7 @@ main .banner-section .blog1 .menu-btn button span {
     width: 49vw;
     margin: 20px 0;
   }
-  main .message-section .message .message-vid-btn button {
-    width: 37vw;
-  }
+  
   .our-service2 .service2 .card {
     width: 32rem !important;
   }
@@ -1850,3 +1878,4 @@ main .banner-section .video .banner-h1 h1 {
     width: 212px;
   }
 }
+
